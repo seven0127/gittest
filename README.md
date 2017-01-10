@@ -1,2 +1,2 @@
 # gittest
-update info on develop branch2
+update info on develop branch3
