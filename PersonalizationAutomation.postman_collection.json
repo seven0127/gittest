@@ -1,304 +1,92 @@
 {
-	"id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-	"name": "Personalization Automation",
-	"description": "Personalization",
-	"order": [
-		"4ea880ed-2f6f-724e-a9d5-e4380da15540",
-		"b629aa2b-d811-e451-db7e-dfa65f7d0479",
-		"bc347d98-1cf5-a843-fa55-87b6f9533d88",
-		"6411124c-126e-d41c-c307-842e4a876c46",
-		"215bd687-d8b8-9d20-52c2-38ca4ace4e81",
-		"57c7ad28-1227-a4bf-2396-3a1e8ffa4a01",
-		"98476049-2884-6b96-65b4-d342ae6a2e20",
-		"fdfe33a7-97c7-8783-829d-6eca3725775e",
-		"e833f394-8f0a-84f2-2bd7-3b6b7ff3cbd4",
-		"ad29810c-19c2-d0a0-6f93-65029c72cebe",
-		"e09bed29-35fa-e423-a83c-16886b37001e",
-		"a2301780-e813-f878-8829-0ae89497ab1b",
-		"f77cfa50-1c97-ec3e-ba79-34dc6a3bf9ba",
-		"91490103-00a1-015e-ee45-448d7f2acbc8",
-		"b1101c91-7c6a-3a70-7b56-31633e654098",
-		"68f8bd8d-c9b1-53e7-bebf-d53cd4c409b5",
-		"c8d339e3-7548-6a8a-2c23-22073f2edc37",
-		"fcf87eb1-e70c-0ed8-4e49-83a79e22725d",
-		"1ceb24d4-329d-0140-d963-9d11f401a648",
-		"f98fa9c1-3120-009a-dfee-2c136f5281cb",
-		"5e78a39d-bec4-a164-75aa-baa935a6e3a5",
-		"75cf774a-98be-68ca-516f-c64b638ddf51",
-		"a21f0a47-e576-096b-daaf-92e93944cd74",
-		"f5ac968b-7c75-2e2f-56a5-69186522e421",
-		"fa845eca-9913-7d8b-3c67-3a08ee7a2276",
-		"1e837efb-0e4e-1304-c8d0-a3dced171fb0",
-		"d08f76ea-977e-36d1-fb51-7cc4885f5290",
-		"19fb1052-3eae-abc4-5e6d-24fbed1eaba3",
-		"31d01dd0-d767-d3a9-0bbd-07308a8de8c0",
-		"246503af-1b54-349c-e689-1a554ed1d091",
-		"c31ce12f-97b3-4ae9-5570-0f703067ab28",
-		"c764a1f8-3a65-e29c-6433-9d6eb0ae0292",
-		"5f26ea4b-4220-0b8c-e46d-f6c72a79a5fd",
-		"0a03a1ed-498f-1e59-d721-5d0c1fd5985b",
-		"5896652e-6445-1d12-f94c-32b3fd287866",
-		"d083ddc8-a1df-dbe0-0b1b-3dd33c882f99",
-		"d383a345-2f1c-97c8-2b8e-52dd9674e26a"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1500976826885,
-	"owner": "1243317",
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "Personalization Automation",
+		"_postman_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
+		"description": "Personalization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "0a03a1ed-498f-1e59-d721-5d0c1fd5985b",
-			"headers": "",
-			"url": "{{server}}/manage/server/setdefaultrecommend?password=secret&value=nba~2222:33333:4444",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500453134928,
-			"name": "Ser default recommend",
-			"description": "getdefaultrecommend",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [
-				{
-					"status": "",
-					"responseCode": {
-						"code": 200,
-						"name": "OK",
-						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
-						"fromServer": true
-					},
-					"time": 18,
-					"headers": [
-						{
-							"key": "Content-Type",
-							"value": "application/json;charset=UTF-8",
-							"name": "Content-Type",
-							"description": "The mime type of this content"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
-							"name": "Date",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"key": "Server",
-							"value": "Apache-Coyote/1.1",
-							"name": "Server",
-							"description": "A name for the server"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked",
-							"name": "Transfer-Encoding",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						}
-					],
-					"cookies": [],
-					"mime": "",
-					"text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}",
-					"language": "json",
-					"previewType": "text",
-					"searchResultScrolledTo": -1,
-					"forceNoPretty": false,
-					"write": true,
-					"empty": false,
-					"failed": false,
-					"responseSize": {
-						"body": 172,
-						"header": 157
-					},
-					"mimeType": "text",
-					"fileName": "response.json",
-					"dataURI": "data:application/json;base64, eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTBPRGN6TWpVM05qVXNJbVY0Y0NJNk1UUTVNalV3T1RjMk5Td2ljM1ZpSWpvaVkzbHRJaXdpYVhOeklqb2lkV1pqSW4wLjJCbnZRaldiU0RYN29Pb3A4eUMzb2NHSXRES1RPcnljb2ljc3d0LWZ3OGsifQ==",
-					"state": {
-						"size": "normal"
-					},
-					"id": "5f5b160d-1612-2f4b-d729-b5e2354f9dc7",
-					"name": "Ptoken",
-					"request": {
-						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
-						"headers": [],
-						"data": "",
-						"method": "POST",
-						"dataMode": "raw"
-					},
-					"owner": "1243317"
-				}
-			],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "19fb1052-3eae-abc4-5e6d-24fbed1eaba3",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/playlist/get",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500974463368,
-			"name": "Get playlist",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "1ceb24d4-329d-0140-d963-9d11f401a648",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/watchhistory/delete?id=497285&completed=false&type=program&position=0",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962635570,
-			"name": "Delete history(program)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "1e837efb-0e4e-1304-c8d0-a3dced171fb0",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/favorite/delete?type=game&id=101108",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500963914226,
-			"name": "Delete favorite",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "215bd687-d8b8-9d20-52c2-38ca4ace4e81",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/watchhistory/set?id=497285&completed=true&type=program&position=007",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962223906,
-			"name": "Add history(Complete program)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "246503af-1b54-349c-e689-1a554ed1d091",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/playlist/delete?id=2000&type=game",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500975236592,
-			"name": "Delete playlist",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "31d01dd0-d767-d3a9-0bbd-07308a8de8c0",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/playlist/set?id=2001&type=program",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500975417256,
-			"name": "Add playlist",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "4ea880ed-2f6f-724e-a9d5-e4380da15540",
-			"headers": "",
-			"headerData": [],
-			"url": "{{server}}/manage/server/generatetoken?password=secret&value=d45f7cba8fa47127as10a61c210d63876~seven0127~nba",
-			"queryParams": [
-				{
-					"key": "password",
-					"value": "secret",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "value",
-					"value": "d45f7cba8fa47127as10a61c210d63876~seven0127~nba",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"preRequestScript": "postman.setEnvironmentVariable(\"server\", \"http://ps.neulion.net.cn/personalization\");",
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Response has inlcluded token.\"] = responseBody.has(\"token\");\nvar jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);\nconsole.log(jsonData.token);\n",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500978908546,
 			"name": "Get authToken",
-			"description": "Get authToken",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [
+			"event": [
 				{
-					"status": "",
-					"responseCode": {
-						"code": 200,
-						"name": "OK",
-						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
-						"fromServer": true
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Response has inlcluded token.\"] = responseBody.has(\"token\");",
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.token);",
+							"console.log(jsonData.token);",
+							""
+						]
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"postman.setEnvironmentVariable(\"server\", \"http://ps.neulion.net.cn/personalization\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "{{server}}/manage/server/generatetoken?password=secret&value=d45f7cba8fa47127as10a61c210d63876~seven0127~nba",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"manage",
+						"server",
+						"generatetoken"
+					],
+					"query": [
+						{
+							"key": "password",
+							"value": "secret",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "value",
+							"value": "d45f7cba8fa47127as10a61c210d63876~seven0127~nba",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get authToken"
+			},
+			"response": [
+				{
+					"id": "0736ffec-1c11-47c2-94ac-22a16db629cc",
+					"name": "Ptoken",
+					"originalRequest": {
+						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
 					},
-					"time": 18,
-					"headers": [
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
 						{
 							"key": "Content-Type",
 							"value": "application/json;charset=UTF-8",
@@ -324,855 +112,311 @@
 							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
 						}
 					],
-					"cookies": [],
-					"mime": "",
-					"text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}",
-					"language": "json",
-					"previewType": "text",
-					"searchResultScrolledTo": -1,
-					"forceNoPretty": false,
-					"write": true,
-					"empty": false,
-					"failed": false,
-					"responseSize": {
-						"body": 172,
-						"header": 157
-					},
-					"mimeType": "text",
-					"fileName": "response.json",
-					"dataURI": "data:application/json;base64, eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTBPRGN6TWpVM05qVXNJbVY0Y0NJNk1UUTVNalV3T1RjMk5Td2ljM1ZpSWpvaVkzbHRJaXdpYVhOeklqb2lkV1pqSW4wLjJCbnZRaldiU0RYN29Pb3A4eUMzb2NHSXRES1RPcnljb2ljc3d0LWZ3OGsifQ==",
-					"state": {
-						"size": "normal"
-					},
-					"id": "d3d6d489-e36c-e294-27a3-1c0efb30f710",
-					"name": "Ptoken",
-					"request": {
-						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
-						"headers": [],
-						"data": "",
-						"method": "POST",
-						"dataMode": "raw"
-					},
-					"owner": "1243317"
+					"cookie": [],
+					"responseTime": 18,
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}"
 				}
-			],
-			"rawModeData": ""
+			]
 		},
 		{
-			"id": "57c7ad28-1227-a4bf-2396-3a1e8ffa4a01",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/watchhistory/set?id=7263&completed=false&type=game&position=008",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962229697,
-			"name": "Add history(Complete game)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "5896652e-6445-1d12-f94c-32b3fd287866",
-			"headers": "",
-			"url": "{{server}}/manage/server/generatetoken?password=secret&value=d45f7cba8fa47127as10a61c210d63876~nba",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500971334977,
-			"name": "Get authToken if not logged in",
-			"description": "Get authToken",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [
-				{
-					"status": "",
-					"responseCode": {
-						"code": 200,
-						"name": "OK",
-						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
-						"fromServer": true
-					},
-					"time": 18,
-					"headers": [
-						{
-							"key": "Content-Type",
-							"value": "application/json;charset=UTF-8",
-							"name": "Content-Type",
-							"description": "The mime type of this content"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
-							"name": "Date",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"key": "Server",
-							"value": "Apache-Coyote/1.1",
-							"name": "Server",
-							"description": "A name for the server"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked",
-							"name": "Transfer-Encoding",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						}
-					],
-					"cookies": [],
-					"mime": "",
-					"text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}",
-					"language": "json",
-					"previewType": "text",
-					"searchResultScrolledTo": -1,
-					"forceNoPretty": false,
-					"write": true,
-					"empty": false,
-					"failed": false,
-					"responseSize": {
-						"body": 172,
-						"header": 157
-					},
-					"mimeType": "text",
-					"fileName": "response.json",
-					"dataURI": "data:application/json;base64, eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTBPRGN6TWpVM05qVXNJbVY0Y0NJNk1UUTVNalV3T1RjMk5Td2ljM1ZpSWpvaVkzbHRJaXdpYVhOeklqb2lkV1pqSW4wLjJCbnZRaldiU0RYN29Pb3A4eUMzb2NHSXRES1RPcnljb2ljc3d0LWZ3OGsifQ==",
-					"state": {
-						"size": "normal"
-					},
-					"id": "43e5562a-4fc7-a9fe-9fe5-9d3e9a0f7d81",
-					"name": "Ptoken",
-					"request": {
-						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
-						"headers": [],
-						"data": "",
-						"method": "POST",
-						"dataMode": "raw"
-					},
-					"owner": "1243317"
-				}
-			],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "5e78a39d-bec4-a164-75aa-baa935a6e3a5",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/favorite/set?ids=101108:Chris:Paul&type=player",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962938521,
-			"name": "Add favorite(player) ",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "5f26ea4b-4220-0b8c-e46d-f6c72a79a5fd",
-			"headers": "",
-			"url": "{{server}}/manage/server/getdefaultrecommend?password=secret&value=nba",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500453176224,
-			"name": "Check default recommend",
-			"description": "getdefaultrecommend",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [
-				{
-					"status": "",
-					"responseCode": {
-						"code": 200,
-						"name": "OK",
-						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
-						"fromServer": true
-					},
-					"time": 18,
-					"headers": [
-						{
-							"key": "Content-Type",
-							"value": "application/json;charset=UTF-8",
-							"name": "Content-Type",
-							"description": "The mime type of this content"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
-							"name": "Date",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"key": "Server",
-							"value": "Apache-Coyote/1.1",
-							"name": "Server",
-							"description": "A name for the server"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked",
-							"name": "Transfer-Encoding",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						}
-					],
-					"cookies": [],
-					"mime": "",
-					"text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}",
-					"language": "json",
-					"previewType": "text",
-					"searchResultScrolledTo": -1,
-					"forceNoPretty": false,
-					"write": true,
-					"empty": false,
-					"failed": false,
-					"responseSize": {
-						"body": 172,
-						"header": 157
-					},
-					"mimeType": "text",
-					"fileName": "response.json",
-					"dataURI": "data:application/json;base64, eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTBPRGN6TWpVM05qVXNJbVY0Y0NJNk1UUTVNalV3T1RjMk5Td2ljM1ZpSWpvaVkzbHRJaXdpYVhOeklqb2lkV1pqSW4wLjJCbnZRaldiU0RYN29Pb3A4eUMzb2NHSXRES1RPcnljb2ljc3d0LWZ3OGsifQ==",
-					"state": {
-						"size": "normal"
-					},
-					"id": "2cdba164-8799-ec38-e7ea-af997cb335cf",
-					"name": "Ptoken",
-					"request": {
-						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
-						"headers": [],
-						"data": "",
-						"method": "POST",
-						"dataMode": "raw"
-					},
-					"owner": "1243317"
-				}
-			],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "6411124c-126e-d41c-c307-842e4a876c46",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "Bearer {{token}}",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "{{server}}/v1/watchhistory/set?id=2912&completed=false&type=program&position=001",
-			"queryParams": [
-				{
-					"key": "id",
-					"value": "2912",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "completed",
-					"value": "false",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "type",
-					"value": "program",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "position",
-					"value": "001",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"preRequestScript": "",
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500979824849,
-			"name": "Add history(Not complete program)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"rawModeData": ""
-		},
-		{
-			"id": "68f8bd8d-c9b1-53e7-bebf-d53cd4c409b5",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "Bearer {{token}}",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "{{server}}/v1/recommended/list?type=game&ps=12&pn=1&callback=_getRecommend",
-			"queryParams": [
-				{
-					"key": "type",
-					"value": "game",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "ps",
-					"value": "12",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "pn",
-					"value": "1",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "callback",
-					"value": "_getRecommend",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"preRequestScript": "",
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500978078065,
-			"name": "Get recommend(game)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"rawModeData": ""
-		},
-		{
-			"id": "75cf774a-98be-68ca-516f-c64b638ddf51",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/favorite/set?ids=MIN&type=team",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962944809,
-			"name": "Add favorite(team)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "91490103-00a1-015e-ee45-448d7f2acbc8",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/profile/delete?profileid=linda",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500973516856,
-			"name": "Delete profile",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "98476049-2884-6b96-65b4-d342ae6a2e20",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/watchhistory/list?type=program&ps=5&pn=1",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962280465,
-			"name": "View history(program)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "a21f0a47-e576-096b-daaf-92e93944cd74",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/favorite/set?ids=1234&type=program",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500964630816,
-			"name": "Add favorite(program)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "a2301780-e813-f878-8829-0ae89497ab1b",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/profile/list",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500968609644,
-			"name": "List profile",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "ad29810c-19c2-d0a0-6f93-65029c72cebe",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/profile/set?profileid=seven0127001&image=http://abc.com&label=mother&age=40",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500968596172,
-			"name": "Set profile Id",
-			"description": "Set",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "b1101c91-7c6a-3a70-7b56-31633e654098",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/recommended/list?type=program&ps=12&pn=1&callback=_getRecommend",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500975582365,
-			"name": "Get recommend(program)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "b629aa2b-d811-e451-db7e-dfa65f7d0479",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "Bearer {{token}}",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "{{server}}/v1/user/set?id={{id}}&name=seven&job=qa&age=28",
-			"queryParams": [
-				{
-					"key": "id",
-					"value": "{{id}}",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "name",
-					"value": "seven",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "job",
-					"value": "qa",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "age",
-					"value": "28",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"preRequestScript": "postman.setEnvironmentVariable(\"id\", Math.round(new Date().getTime()/1000));",
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Response: success\"] = responseBody.has(\"success\");\nconsole.log(postman.getEnvironmentVariable(\"id\"));",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1501036449379,
 			"name": "Set profile",
-			"description": "Set",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"rawModeData": ""
-		},
-		{
-			"id": "bc347d98-1cf5-a843-fa55-87b6f9533d88",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"headerData": [
+			"event": [
 				{
-					"key": "Authorization",
-					"value": "Bearer {{token}}",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "{{server}}/v1/user/get",
-			"queryParams": [],
-			"preRequestScript": "",
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "tests[\"Status code is 200\"] = responseCode.code === 200;\n\nvar jsonData = JSON.parse(responseBody);\ntests[\"Body(id) matches string\"] = jsonData.id === postman.getEnvironmentVariable(\"id\");\n\nconsole.log(postman.getEnvironmentVariable(\"id\"));",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500979562129,
-			"name": "Get profile",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"rawModeData": ""
-		},
-		{
-			"id": "c31ce12f-97b3-4ae9-5570-0f703067ab28",
-			"headers": "",
-			"url": "{{server}}/v1/recommended/analyze?token={{token}}&type=program&ps=20",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "var jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500453195015,
-			"name": "analynic",
-			"description": "Get authToken",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [
-				{
-					"status": "",
-					"responseCode": {
-						"code": 200,
-						"name": "OK",
-						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
-						"fromServer": true
-					},
-					"time": 18,
-					"headers": [
-						{
-							"key": "Content-Type",
-							"value": "application/json;charset=UTF-8",
-							"name": "Content-Type",
-							"description": "The mime type of this content"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
-							"name": "Date",
-							"description": "The date and time that the message was sent"
-						},
-						{
-							"key": "Server",
-							"value": "Apache-Coyote/1.1",
-							"name": "Server",
-							"description": "A name for the server"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked",
-							"name": "Transfer-Encoding",
-							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
-						}
-					],
-					"cookies": [],
-					"mime": "",
-					"text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}",
-					"language": "json",
-					"previewType": "text",
-					"searchResultScrolledTo": -1,
-					"forceNoPretty": false,
-					"write": true,
-					"empty": false,
-					"failed": false,
-					"responseSize": {
-						"body": 172,
-						"header": 157
-					},
-					"mimeType": "text",
-					"fileName": "response.json",
-					"dataURI": "data:application/json;base64, eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTBPRGN6TWpVM05qVXNJbVY0Y0NJNk1UUTVNalV3T1RjMk5Td2ljM1ZpSWpvaVkzbHRJaXdpYVhOeklqb2lkV1pqSW4wLjJCbnZRaldiU0RYN29Pb3A4eUMzb2NHSXRES1RPcnljb2ljc3d0LWZ3OGsifQ==",
-					"state": {
-						"size": "normal"
-					},
-					"id": "0b940416-289b-eadd-3784-33bd1d867842",
-					"name": "Ptoken",
-					"request": {
-						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
-						"headers": [],
-						"data": "",
-						"method": "POST",
-						"dataMode": "raw"
-					},
-					"owner": "1243317"
-				}
-			],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "c764a1f8-3a65-e29c-6433-9d6eb0ae0292",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDA0MDgwNjMsImV4cCI6MTUwNTU5MjA2Mywic3ViIjoiIiwiaXNzIjoibmJhIn0.aeCcNmCClTQR4VyQ6qtnXxW66YHWFBUHUWOm2oS14H8\n",
-			"url": "{{server}}/v1/recommended/list?type=game&ps=12&pn=1&callback=_getRecommend",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500453181143,
-			"name": "Not logged in, get recommendation",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "c8d339e3-7548-6a8a-2c23-22073f2edc37",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/recommended/list?type=epg&ps=4&pn=1&callback=_getRecommend",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500975695559,
-			"name": "Get recommend(epg) ",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "d083ddc8-a1df-dbe0-0b1b-3dd33c882f99",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/recommended/list?id=497200&type=program&ps=12&pn=1&callback=_getRecommend",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500453413247,
-			"name": "Get recommend with program id",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "d08f76ea-977e-36d1-fb51-7cc4885f5290",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/rating/list?uid=sevenxu&type=program",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500453202406,
-			"name": "Get rating",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "d383a345-2f1c-97c8-2b8e-52dd9674e26a",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "Bearer {{token}}",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "{{server}}/manage/server/loglevel?value=debug&password=secret",
-			"queryParams": [
-				{
-					"key": "value",
-					"value": "debug",
-					"equals": true,
-					"description": "",
-					"enabled": true
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Response: success\"] = responseBody.has(\"success\");",
+							"console.log(postman.getEnvironmentVariable(\"id\"));"
+						]
+					}
 				},
 				{
-					"key": "password",
-					"value": "secret",
-					"equals": true,
-					"description": "",
-					"enabled": true
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"postman.setEnvironmentVariable(\"id\", Math.round(new Date().getTime()/1000));"
+						]
+					}
 				}
 			],
-			"preRequestScript": "",
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500977973164,
-			"name": "Set log to debug",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"rawModeData": ""
+			"request": {
+				"url": {
+					"raw": "{{server}}/v1/user/set?id={{id}}&name=seven&job=qa&age=28",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"v1",
+						"user",
+						"set"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "{{id}}",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "name",
+							"value": "seven",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "job",
+							"value": "qa",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "age",
+							"value": "28",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Set"
+			},
+			"response": []
 		},
 		{
-			"id": "e09bed29-35fa-e423-a83c-16886b37001e",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/profile/get?profileid=seven0127001",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500951518352,
-			"name": "Get profile by Profile Id",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
-		},
-		{
-			"id": "e833f394-8f0a-84f2-2bd7-3b6b7ff3cbd4",
-			"headers": "",
-			"url": "{{server}}/manage/server/generatetoken?password=secret&value=d45f7cba8fa47127as10a61c210d63876~seven0127~nba~seven0127001",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "tests[\"Body has token response\"] = responseBody.has(\"token\");\nvar jsonData = JSON.parse(responseBody);\npostman.setEnvironmentVariable(\"token\", jsonData.token);",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500964559727,
-			"name": "Get authToken with Profile id",
-			"description": "Get authToken",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [
+			"name": "Get profile",
+			"event": [
 				{
-					"status": "",
-					"responseCode": {
-						"code": 200,
-						"name": "OK",
-						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action.",
-						"fromServer": true
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"id is \"+jsonData.id] = jsonData.id === postman.getEnvironmentVariable(\"id\");",
+							"tests[\"name is \"+jsonData.job] = jsonData.job === \"qa\";",
+							"tests[\"job is \"+jsonData.age] = jsonData.age === \"28\";",
+							"",
+							"console.log(postman.getEnvironmentVariable(\"id\"));",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}/v1/user/get",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add history(Not complete program)",
+			"request": {
+				"url": {
+					"raw": "{{server}}/v1/watchhistory/set?id=2912&completed=false&type=program&position=001",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"v1",
+						"watchhistory",
+						"set"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2912",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "completed",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "type",
+							"value": "program",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "position",
+							"value": "001",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add history(Complete program)",
+			"request": {
+				"url": "{{server}}/v1/watchhistory/set?id=497285&completed=true&type=program&position=007",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add history(Complete game)",
+			"request": {
+				"url": "{{server}}/v1/watchhistory/set?id=7263&completed=false&type=game&position=008",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "View history(program)",
+			"request": {
+				"url": "{{server}}/v1/watchhistory/list?type=program&ps=5&pn=1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "View history(game)",
+			"request": {
+				"url": "{{server}}/v1/watchhistory/list?type=game&ps=5&pn=1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get authToken with Profile id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Body has token response\"] = responseBody.has(\"token\");",
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}/manage/server/generatetoken?password=secret&value=d45f7cba8fa47127as10a61c210d63876~seven0127~nba~seven0127001",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get authToken"
+			},
+			"response": [
+				{
+					"id": "8e24867d-61ee-47e1-b197-4cf020a60d26",
+					"name": "Ptoken",
+					"originalRequest": {
+						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
 					},
-					"time": 18,
-					"headers": [
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
 						{
 							"key": "Content-Type",
 							"value": "application/json;charset=UTF-8",
@@ -1198,160 +442,845 @@
 							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
 						}
 					],
-					"cookies": [],
-					"mime": "",
-					"text": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}",
-					"language": "json",
-					"previewType": "text",
-					"searchResultScrolledTo": -1,
-					"forceNoPretty": false,
-					"write": true,
-					"empty": false,
-					"failed": false,
-					"responseSize": {
-						"body": 172,
-						"header": 157
-					},
-					"mimeType": "text",
-					"fileName": "response.json",
-					"dataURI": "data:application/json;base64, eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpwWVhRaU9qRTBPRGN6TWpVM05qVXNJbVY0Y0NJNk1UUTVNalV3T1RjMk5Td2ljM1ZpSWpvaVkzbHRJaXdpYVhOeklqb2lkV1pqSW4wLjJCbnZRaldiU0RYN29Pb3A4eUMzb2NHSXRES1RPcnljb2ljc3d0LWZ3OGsifQ==",
-					"state": {
-						"size": "normal"
-					},
-					"id": "09863040-6207-c6ed-379e-485ea12e0ab3",
-					"name": "Ptoken",
-					"request": {
-						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
-						"headers": [],
-						"data": "",
-						"method": "POST",
-						"dataMode": "raw"
-					},
-					"owner": "1243317"
+					"cookie": [],
+					"responseTime": 18,
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}"
+				}
+			]
+		},
+		{
+			"name": "Set profile Id",
+			"request": {
+				"url": "{{server}}/v1/profile/set?profileid=seven0127001&image=http://abc.com&label=mother&age=40",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Set"
+			},
+			"response": []
+		},
+		{
+			"name": "Get profile by Profile Id",
+			"request": {
+				"url": "{{server}}/v1/profile/get?profileid=seven0127001",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "List profile",
+			"request": {
+				"url": "{{server}}/v1/profile/list",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Order profile",
+			"request": {
+				"url": "{{server}}/v1/profile/order?profileids=linda,felix",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete profile",
+			"request": {
+				"url": "{{server}}/v1/profile/delete?profileid=linda",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get recommend(program)",
+			"request": {
+				"url": "{{server}}/v1/recommended/list?type=program&ps=12&pn=1&callback=_getRecommend",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get recommend(game)",
+			"request": {
+				"url": {
+					"raw": "{{server}}/v1/recommended/list?type=game&ps=12&pn=1&callback=_getRecommend",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"v1",
+						"recommended",
+						"list"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "game",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "ps",
+							"value": "12",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pn",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "callback",
+							"value": "_getRecommend",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get recommend(epg) ",
+			"request": {
+				"url": "{{server}}/v1/recommended/list?type=epg&ps=4&pn=1&callback=_getRecommend",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete history(game)",
+			"request": {
+				"url": "{{server}}/v1/watchhistory/delete?id=7263&completed=false&type=game&position=0",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete history(program)",
+			"request": {
+				"url": "{{server}}/v1/watchhistory/delete?id=497285&completed=false&type=program&position=0",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add favorite(game)",
+			"request": {
+				"url": "{{server}}/v1/favorite/set?ids=101108&type=game",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add favorite(player) ",
+			"request": {
+				"url": "{{server}}/v1/favorite/set?ids=101108:Chris:Paul&type=player",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add favorite(team)",
+			"request": {
+				"url": "{{server}}/v1/favorite/set?ids=MIN&type=team",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add favorite(program)",
+			"request": {
+				"url": "{{server}}/v1/favorite/set?ids=1234&type=program",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add favorite(Linear Channel)",
+			"request": {
+				"url": "{{server}}/v1/favorite/set?ids=1&type=linear channel",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get favorite",
+			"request": {
+				"url": "{{server}}/v1/favorite/list?ps=5&pn=1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete favorite",
+			"request": {
+				"url": "{{server}}/v1/favorite/delete?type=game&id=101108",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get rating",
+			"request": {
+				"url": "{{server}}/v1/rating/list?uid=sevenxu&type=program",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Get playlist",
+			"request": {
+				"url": "{{server}}/v1/playlist/get",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Add playlist",
+			"request": {
+				"url": "{{server}}/v1/playlist/set?id=2001&type=program",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete playlist",
+			"request": {
+				"url": "{{server}}/v1/playlist/delete?id=2000&type=game",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
+		},
+		{
+			"name": "analynic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.token);"
+						]
+					}
 				}
 			],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
+			"request": {
+				"url": "{{server}}/v1/recommended/analyze?token={{token}}&type=program&ps=20",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get authToken"
+			},
+			"response": [
+				{
+					"id": "28c1dba6-c642-4da4-89d9-58496b777686",
+					"name": "Ptoken",
+					"originalRequest": {
+						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}"
+				}
+			]
 		},
 		{
-			"id": "f5ac968b-7c75-2e2f-56a5-69186522e421",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/favorite/set?ids=1&type=linear channel",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500964639568,
-			"name": "Add favorite(Linear Channel)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
+			"name": "Not logged in, get recommendation",
+			"request": {
+				"url": "{{server}}/v1/recommended/list?type=game&ps=12&pn=1&callback=_getRecommend",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1MDA0MDgwNjMsImV4cCI6MTUwNTU5MjA2Mywic3ViIjoiIiwiaXNzIjoibmJhIn0.aeCcNmCClTQR4VyQ6qtnXxW66YHWFBUHUWOm2oS14H8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
 		},
 		{
-			"id": "f77cfa50-1c97-ec3e-ba79-34dc6a3bf9ba",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/profile/order?profileids=linda,felix",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500972098289,
-			"name": "Order profile",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
+			"name": "Check default recommend",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}/manage/server/getdefaultrecommend?password=secret&value=nba",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "getdefaultrecommend"
+			},
+			"response": [
+				{
+					"id": "37326a0a-9df2-4bf9-9713-b87c881980c2",
+					"name": "Ptoken",
+					"originalRequest": {
+						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}"
+				}
+			]
 		},
 		{
-			"id": "f98fa9c1-3120-009a-dfee-2c136f5281cb",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/favorite/set?ids=101108&type=game",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962927970,
-			"name": "Add favorite(game)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
+			"name": "Ser default recommend",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}/manage/server/setdefaultrecommend?password=secret&value=nba~2222:33333:4444",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "getdefaultrecommend"
+			},
+			"response": [
+				{
+					"id": "f39cfd49-ac92-4f2a-98f3-85ac789f89d3",
+					"name": "Ptoken",
+					"originalRequest": {
+						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}"
+				}
+			]
 		},
 		{
-			"id": "fa845eca-9913-7d8b-3c67-3a08ee7a2276",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/favorite/list?ps=5&pn=1",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500964786840,
-			"name": "Get favorite",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
+			"name": "Get authToken if not logged in",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"token\", jsonData.token);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "{{server}}/manage/server/generatetoken?password=secret&value=d45f7cba8fa47127as10a61c210d63876~nba",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get authToken"
+			},
+			"response": [
+				{
+					"id": "81b02f07-99da-4ca7-8879-64c9eecbe09e",
+					"name": "Ptoken",
+					"originalRequest": {
+						"url": "http://neuvideodemo.neulion.net.cn/personalization/manage/server/generatetoken?password=secret&value=a1698d6a6703d3a025aec4b9ba523cdd~cym~ufc",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 17 Feb 2017 10:02:45 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE0ODczMjU3NjUsImV4cCI6MTQ5MjUwOTc2NSwic3ViIjoiY3ltIiwiaXNzIjoidWZjIn0.2BnvQjWbSDX7oOop8yC3ocGItDKTOrycoicswt-fw8k\"}"
+				}
+			]
 		},
 		{
-			"id": "fcf87eb1-e70c-0ed8-4e49-83a79e22725d",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/watchhistory/delete?id=7263&completed=false&type=game&position=0",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500974802071,
-			"name": "Delete history(game)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
+			"name": "Get recommend with program id",
+			"request": {
+				"url": "{{server}}/v1/recommended/list?id=497200&type=program&ps=12&pn=1&callback=_getRecommend",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
 		},
 		{
-			"id": "fdfe33a7-97c7-8783-829d-6eca3725775e",
-			"headers": "Authorization: Bearer {{token}}\n",
-			"url": "{{server}}/v1/watchhistory/list?type=game&ps=5&pn=1",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1500962274921,
-			"name": "View history(game)",
-			"description": "Get",
-			"collectionId": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"responses": [],
-			"collection_id": "5e7c1915-88de-141a-084b-265d6a6d5dfa",
-			"rawModeData": ""
+			"name": "Set log to debug",
+			"request": {
+				"url": {
+					"raw": "{{server}}/manage/server/loglevel?value=debug&password=secret",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"manage",
+						"server",
+						"loglevel"
+					],
+					"query": [
+						{
+							"key": "value",
+							"value": "debug",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get"
+			},
+			"response": []
 		}
 	]
 }
